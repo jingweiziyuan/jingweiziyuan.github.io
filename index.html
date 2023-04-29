@@ -45,77 +45,7 @@
 <body>
    
    
-    <!-- <div class="header_">
-      <ul>
-        <li>高</li>
-        <li>考</li>
-        <li>倒</li>
-        <li>计</li>
-        <li>时</li>
-      </ul>
-    </div> -->
-
-    <div class="time_">
-        <!--倒计时-->
-        <div class="count_downbox">
-            <img src="bg1.jpg" class="img_1" alt="">
-            <img src="bg2.jpg" class="img_2" alt="">
-            <div class="timebox">
-                <b class="b_box"><span id="year_span"></span> 高考倒计时</b>
-                <div class="count_down">
-                    <span id="t_d">0</span>
-                    <span id="t_h">0</span>
-                    <span id="t_m">0</span>
-                    <span id="t_s">0</span>
-                </div>
-            </div>
-
-        </div>
-
-        <script type="text/javascript">
-            function getRTime() {
-                console.log(123)
-                var NowTime = new Date();
-                var year = NowTime < new Date(NowTime.getFullYear() + '/06/10 00:00:00') ? NowTime.getFullYear() : NowTime.getFullYear() + 1;
-                var EndTime =  new Date(year + '/06/07 00:00:00');
-                $("#year_span").text(year + "年");
-
-                var t = EndTime.getTime() - NowTime.getTime();
-                var d = Math.floor(t / 1000 / 60 / 60 / 24);
-                var h = Math.floor(t / 1000 / 60 / 60 % 24);
-                var m = Math.floor(t / 1000 / 60 % 60);
-                var s = Math.floor(t / 1000 % 60);
-
-                document.getElementById("t_d").innerHTML = d < 0 ? 0 : d;/* " 天"*/
-                document.getElementById("t_h").innerHTML = h < 0 ? 0 : h;/* " 时"*/
-                document.getElementById("t_m").innerHTML = m < 0 ? 0 : m;/* " 分"*/
-                document.getElementById("t_s").innerHTML = s < 0 ? 0 : s;/* " 秒"*/
-
-                if (s < 0){
-                    timeup();}
-                else {
-                    setTimeout(getRTime, 1000);
-                }
-            }
-            getRTime()
-            function timeup() {
-                $(function () {
-                    $('.img_2').css({
-                        "display":"block",
-                    })
-                    $('.cont').css({
-                        "background":"#DF000F",
-                    })
-                })
-
-            }
-            $(function(){
-                $("html,body").animate({"scrollTop": "130px"}, 1000);
-            });
-        </script>
-        <!--倒计时-->
-    </div>
-
+  
     <div class="cont">
         <div class="div1">
             <ul>
