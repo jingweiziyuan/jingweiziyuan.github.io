@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <!--<script type="text/javascript" src="./t.js"></script>-->
+
     <script type="text/javascript">
         var pc_style = ""
         var browser = {
@@ -40,7 +40,7 @@
     <link rel="stylesheet" type="text/css" href="./default.css">
     <link rel="stylesheet" type="text/css" href="./demo.css">
     <!--倒计时-->
-    <!--倒计时<script src="./jquery-2.1.1.min.js"></script>-->
+
 </head>
 
 <body>
@@ -334,5 +334,15 @@
         </ul>
     </div>
 
-
+    <script type="text/javascript">
+        $('document').ready(function () {
+            'use strict';
+            $('.countdown').final_countdown({
+                'start': 20151019,
+                'end': 30151019,
+                'now': 20151019
+            });
+        });
+    </script>
+</body>
 </html>
